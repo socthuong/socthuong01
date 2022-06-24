@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Website Layout </title>
+<style>
+* {
+box-sizing: border-box;
+}
+/* CSS property for header section */
+.header {
+background-color: #ffbe00;
+padding: 15px;
+text-align: center;
+}
+/* CSS property for navigation menu */
+.nav_menu {
+overflow: hidden;
+background-color: #333;
+}
+.nav_menu a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.nav_menu a:hover {
+background-color: white;
+color: green;
+}
+/* CSS property for content section */
+.columnA,
+.columnB,
+.columnC {
+float: left;
+width: 31%;
+padding: 15px;
+text-align: justify;
+}
+h2 {
+color: green;
+text-align: center;
+}
+/* Media query to set website layout
+according to screen size */
+@media screen and (max-width:600px) {
+.columnA,
+.columnB,
+.columnC {
+width: 50%;
+}
+}
+@media screen and (max-width:400px) {
+.columnA,
+.columnB,
+.columnC {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<!-- header of website layout -->
+<div class="header">
+<h2 style="color:white;font-size:200%">Giao diện</h2> 
+</div>
+<!-- navigation menu of website layout -->
+<div class="nav_menu"> <a href="#">Trang chủ</a> <a href="#">Sản phẩm điện thoại</a> <a href="#">Tài khoản</a> </div>
+<!-- Content section of website layout -->
+<div class="row">
+<div class="columnA">
+<h2>OPPO </h2>
+<p>Chất lượng hoàn hoản, đem lại nhiều trãi nghiệm cho người dùng</p>
+</div>
+<div class="columnB">
+<h2>Sam Sung</h2>
+<p>Mẫu mã đẹp mắt, có nhiều chức năng, trong đó có camera phiên bãn mới</p>
+</div>
+<div class="columnC">
+<h2>IPhone</h2>
+<p>Chất lượng, Bảo mật cao, giao diện đẹp mắt.</p>
+</div>
+</div>
+</body>
+</html>
+
